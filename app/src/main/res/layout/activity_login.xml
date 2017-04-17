@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/exemplo_de_uso_do_volley" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="10dp"
+        android:text="@string/email" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="10dp"
+        android:text="@string/password" />
+
+    <Button
+        android:id="@+id/jsonObjectRequest"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/entrar_jsonobjectrequest"
+        android:onClick="callByJsonObjectRequest"
+        android:layout_below="@+id/password" />
+
+    <Button
+        android:id="@+id/jsonArrayRequest"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/entrar_jsonarrayrequest"
+        android:onClick="callByJsonArrayRequest"
+        android:layout_below="@+id/jsonObjectRequest"/>
+
+    <Button
+        android:id="@+id/stringRequest"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/entrar_stringrequest"
+        android:onClick="callByStringRequest"
+        android:layout_below="@+id/jsonArrayRequest" />
+
+
+</RelativeLayout>
